@@ -19,14 +19,15 @@ const hendlecardsitem=(card)=>{
           total = total + item.salary;
         })
   
-        setcards([...Cards,card])
+      
         if(total>20000){
           return alert("Enought Tk")
         }
-        setttal(total)
       
+        setttal(total)
         let findtk = 20000- total;    
-        setfindtk(findtk)
+        setfindtk(findtk);
+        setcards([...Cards,card])
           
         }
         
